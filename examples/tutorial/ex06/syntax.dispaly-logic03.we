@@ -1,0 +1,36 @@
+<template>
+    <div>
+        <div repeat="person in list" class="{{person.gender}}">
+            <text>{{$index}} - {{person.id}} - {{person.nickname}}</text>
+        </div>
+        <text>----</text>
+        <div repeat="person in list" class="{{person.gender}}" track-by="id">
+            <text>{{$index}} - {{person.id}} - {{person.nickname}}</text>
+        </div>
+        <text>----</text>
+        <!-- something wrong here: duplicated track-by value -->
+        <div repeat="person in list" class="{{person.gender}}" track-by="nickname">
+            <text>{{$index}} - {{person.id}} - {{person.nickname}}</text>
+        </div>
+    </div>
+</template>
+
+<style>
+    .male { background-color: #9999ff; }
+    .female { background-color: #ff9999; }
+</style>
+
+<script>
+    module.exports = {
+        data: {
+            list: [
+                { id: 11, gender: 'male', nickname: 'Li Lei' },
+                { id: 22, gender: 'female', nickname: 'Han Meimei' },
+                { id: 33, gender: 'male', nickname: 'Jim Green' }
+            ]
+        },
+        ready: function () {
+            this.list.unshift({ id: 44, gender: 'female', nickname: 'Han Meimei' })
+        }
+    }
+</script>

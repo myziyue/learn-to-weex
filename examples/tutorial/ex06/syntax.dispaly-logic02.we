@@ -1,0 +1,28 @@
+<template>
+    <div>
+        <div repeat="person in list" class="{{person.gender}}">
+            <text>{{person.nickname}}</text>
+        </div>
+        <hr>
+        <div repeat="(index, person) in list" class="{{person.gender}}">
+            <text>{{index}} -- {{person.nickname}}</text>
+        </div>
+    </div>
+</template>
+
+<style>
+    .male{  background-color: #9999ff;  }
+    .female {  background-color: #ff9999;  }
+</style>
+
+<script>
+    module.exports = {
+        data: {
+            list: [
+                {gender: 'male', nickname: 'Li Lei'},
+                {gender: 'female', nickname: 'Han Meimei'},
+                {gender: 'male', nickname: 'Jim Green'},
+            ]
+        }
+    };
+</script>

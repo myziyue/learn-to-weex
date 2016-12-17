@@ -1,0 +1,20 @@
+<template>
+    <div>
+        <text onclick="toggle">Toggle Image</text>
+        <image if="shown" src="{{imageUrl}}" style="width: 512; height: 512;"></image>
+    </div>
+</template>
+
+<script>
+    module.exports = {
+        data: {
+            imageUrl: 'https://gtms02.alicdn.com/tps/i2/TB1QHKjMXXXXXadXVXX20ySQVXX-512-512.png',
+            shown: false
+        },
+        methods: {
+            toggle: function () {
+                this.shown = !this.shown
+            }
+        }
+    }
+</script>
