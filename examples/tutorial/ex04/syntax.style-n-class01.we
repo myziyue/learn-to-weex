@@ -1,0 +1,9 @@
+<template>
+    <div style="width:400; height:50;background-color: aquamarine;">
+        <text>Hello, world!</text>
+    </div>
+</template>
+
+<script></script>
+
+<style></style>

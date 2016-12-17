@@ -1,0 +1,18 @@
+<template>
+    <div>
+        <text style="font-size: {{fontSize}};">Alibaba</text>
+        <text class="large {{textClass}}">Weex Team</text>
+    </div>
+</template>
+<style>
+    .large {font-size: 36;}
+    .highlight {color: #ff0000;}
+</style>
+<script>
+    module.exports = {
+        data: {
+            fontSize: 32,
+            textClass: 'highlight'
+        }
+    }
+</script>

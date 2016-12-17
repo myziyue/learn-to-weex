@@ -1,0 +1,20 @@
+<template>
+    <div>
+        <text onclick="update(1, 2)">Result : {{result}}</text>
+    </div>
+</template>
+
+<script>
+    module.exports = {
+        data: {
+            result: '<empty>',
+        },
+        methods: {
+            update: function (x, y) {
+                this.result = x + y;
+            }
+        },
+    };
+</script>
+
+<style></style>
