@@ -1,0 +1,33 @@
+<template>
+  <div class="main-div">
+    <image style="width: 200; height: 200;" src="https://gtms02.alicdn.com/tps/i2/TB1QHKjMXXXXXadXVXX20ySQVXX-512-512.png"></image>
+    <text>Alibaba Weex Team</text>
+    <hr>
+    <text>The time is {{datetime}}</text>
+    <text>{{title}}</text>
+    <text>{{getTitle()}}</text>
+  </div>
+</template>
+
+<style>
+  .main-div{
+    text-align: center;
+  }
+</style>
+
+<script>
+    module.exports = {
+        data: {
+            title: 'Alibaba',
+            datetime: null
+        },
+        methods: {
+            getTitle: function () {
+                return 'Weex Team'
+            }
+        },
+        created: function() {
+            this.datetime = new Date().toLocaleString()
+        }
+    }
+</script>
