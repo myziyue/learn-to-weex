@@ -10,12 +10,4 @@ Desktop.ini
 .DS_Store
 .svn
 
-# phpunit itself is not needed
-phpunit.phar
-# local phpunit config
-/phpunit.xml
-
 # 项目文件
-vendor
-composer.lock
-app/runtimes/
