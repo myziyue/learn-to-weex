@@ -16,4 +16,4 @@
     
     2.2. [数据绑定](./documents/ex01.tutorial/02.2.syntax.style-n-class.md)
 
-    2.3. [事件处理](./documents/ex01.tutorial/02.2.syntax.style-n-class.md)
+    2.3. [事件处理](./documents/ex01.tutorial/02.3.syntax.events.md)
