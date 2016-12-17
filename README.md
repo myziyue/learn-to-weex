@@ -19,3 +19,5 @@
     2.3. [事件处理](./documents/ex01.tutorial/05.syntax.events.md)
     
     2.4. [展示逻辑控制](./documents/ex01.tutorial/06.syntax.display-logic.md)
+    
+    2.5. [渲染过程控制](./documents/ex01.tutorial/07.syntax.render-logic.md)

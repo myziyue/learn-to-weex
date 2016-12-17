@@ -1,0 +1,16 @@
+<template>
+    <div>
+        <div>
+            <text>Hello</text>
+            <text>Weex</text>
+        </div>
+        <div append="node">
+            <text>Hello</text>
+            <text>Weex</text>
+        </div>
+        <div append="tree">
+            <text>Hello</text>
+            <text>Weex</text>
+        </div>
+    </div>
+</template>
