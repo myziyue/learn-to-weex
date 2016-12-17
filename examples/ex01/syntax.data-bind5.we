@@ -1,0 +1,14 @@
+<template>
+    <div>
+        <text style="font-size: {{size}}; color: {{color}};">Hello World!</text>
+    </div>
+</template>
+
+<script>
+    module.exports = {
+        data: {
+            size: 32,
+            color: '#ff0000'
+        }
+    }
+</script>

@@ -1,0 +1,33 @@
+<template>
+    <div style="flex-direction: row;">
+        <text>{{fullName}}</text>
+        <text onclick="changeName" style="margin-left: 10;">CHANGE NAME</text>
+    </div>
+</template>
+
+<script>
+    module.exports = {
+        data: {
+            firstName: 'John',
+            lastName: 'Smith'
+        },
+        computed: {
+            fullName: {
+                get: function() {
+                    return this.firstName + ' ' + this.lastName
+                },
+
+                set: function(v) {
+                    var s = v.split(' ')
+                    this.firstName = s[0]
+                    this.lastName = s[1]
+                }
+            }
+        },
+        methods: {
+            changeName: function() {
+                this.fullName = 'Terry King'
+            }
+        }
+    }
+</script>

@@ -1,0 +1,24 @@
+<template>
+    <div style="flex-direction: column;">
+        <text onclick="toggle">Toggle</text>
+        <image if="{{shown}}" src="{{imageUrl}}" class="logo"></image>
+    </div>
+</template>
+
+<style>
+    .logo { width: 512; height: 512; }
+</style>
+
+<script>
+    module.exports = {
+        data: {
+            shown: true,
+            imageUrl: 'https://gtms02.alicdn.com/tps/i2/TB1QHKjMXXXXXadXVXX20ySQVXX-512-512.png'
+        },
+        methods: {
+            toggle: function () {
+                this.shown = !this.shown
+            }
+        }
+    }
+</script>
