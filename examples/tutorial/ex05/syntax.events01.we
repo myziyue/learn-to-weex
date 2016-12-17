@@ -1,0 +1,18 @@
+<template>
+    <div>
+        <text onclick="toggle">Toggle: {{result}}</text>
+    </div>
+</template>
+
+<script>
+    module.exports = {
+        data: {
+            result: true
+        },
+        methods: {
+            toggle: function () {
+                this.result = !this.result
+            }
+        }
+    }
+</script>
