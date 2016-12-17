@@ -1,0 +1,14 @@
+<template>
+    <div style="flex-direction: row;">
+        <text>{{firstName + ' ' + lastName}}</text>
+    </div>
+</template>
+
+<script>
+    module.exports = {
+        data: {
+            firstName: 'John',
+            lastName: 'Smith'
+        }
+    }
+</script>

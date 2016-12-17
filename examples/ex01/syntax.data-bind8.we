@@ -1,0 +1,12 @@
+<template>
+    <div>
+        <text repeat="(k,v) in list">{{k}} - {{v}}</text>
+    </div>
+</template>
+<script>
+    module.exports = {
+        data: {
+            list: ['a', 'b', 'c', 'd']
+        }
+    }
+</script>

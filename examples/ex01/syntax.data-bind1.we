@@ -1,0 +1,16 @@
+<template>
+    <div>
+        <text style="font-size: {{title.size}}">{{title.value}}</text>
+    </div>
+</template>
+
+<script>
+    module.exports = {
+        data: {
+            title: {
+                size: 76,
+                value: 'Alibaba Weex Team'
+            }
+        }
+    }
+</script>

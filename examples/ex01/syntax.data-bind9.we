@@ -1,0 +1,16 @@
+<template>
+    <div static>
+        <text>{{ word }}</text>
+    </div>
+</template>
+
+<script>
+    module.exports = {
+        ready: function() {
+            this.word = 'Data changes' // UI won't be updated
+        },
+        data: {
+            word: 'Hello static'
+        }
+    }
+</script>
