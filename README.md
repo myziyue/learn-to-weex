@@ -60,9 +60,13 @@
     
     5.1.3. [ViewModel API](./documents/03.references/03.references.api.md)
     
-    5.1.4. [通用特性](./documents/03.references/04.references.gesture.md)
+    5.1.4. [手势](./documents/03.references/04.references.gesture.md)
     
-    5.1.5. [通用样式](./documents/03.references/05.references.common-attrs.md)
+    5.1.5. [通用特性](./documents/03.references/05.references.common-attrs.md)
     
-    5.1.6. [通用事件](./documents/03.references/06.references.common-style.md)
+    5.1.6. [通用样式](./documents/03.references/06.references.common-style.md)
+    
+    5.1.7. [通用事件](./documents/03.references/07.references.common-event.md)
+    
+    5.1.8. [特殊元素](./documents/03.references/08.references.special-element.md)
    

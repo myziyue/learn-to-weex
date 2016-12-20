@@ -1,0 +1,15 @@
+<element name="item">
+    <template>
+        <div style="color: red;">
+            <content></content>
+        </div>
+    </template>
+</element>
+
+<template>
+    <div>
+        <item>
+            <text>Content Text</text>
+        </item>
+    </div>
+</template>
