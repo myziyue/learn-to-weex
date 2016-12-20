@@ -1,0 +1,17 @@
+<!-- somepath/foo.we -->
+<template>
+    <div style="flex-direction: row;">
+        <image src="{{image}}"></image>
+        <text>{{title}}</text>
+    </div>
+</template>
+<script>
+    module.exports = {
+        data: {
+            // These keys must be declared explicitly here
+            // or data-binding will not work from its parent.
+            title: null,
+            image: null
+        }
+    }
+</script>

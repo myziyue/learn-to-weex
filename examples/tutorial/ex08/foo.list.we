@@ -1,0 +1,17 @@
+<!-- samepath/foo.list.we -->
+<template>
+    <div>
+        <text>{{description}}</text>
+        <foo repeat="item in list" title="{{item.text}}" image="{{item.img}}"></foo>
+    </div>
+</template>
+<script>
+    module.exports = {
+        data: {
+            description: '',
+            // This key must be declared explicitly here
+            // or data-binding will not work from its parent.
+            list: []
+        }
+    }
+</script>

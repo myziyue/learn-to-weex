@@ -1,0 +1,35 @@
+<element name="foo">
+    <template>
+        <div style="flex-direction: row;">
+            <text>{{title}}</text>
+        </div>
+    </template>
+    <script>
+        module.exports = {
+            data: {
+                title: null
+            },
+            methods: {
+                setTitle: function (text) {
+                    this.title = text
+                }
+            }
+        }
+    </script>
+</element>
+
+<template>
+    <div>
+        <foo id="sub" title="Hello"></foo>
+        <text onclick="update">Click Me to Update</text>
+    </div>
+</template>
+<script>
+    module.exports = {
+        methods: {
+            update: function (e) {
+                this.$vm('sub').setTitle('Updated')
+            }
+        }
+    }
+</script>
