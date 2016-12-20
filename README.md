@@ -48,4 +48,4 @@
     
     4.3. [transformer](./documents/02.tools/03.tools.transformer.md)
     
-    
+    4.4. [Weex Playground App](./documents/02.tools/04.tools.playground-app.md)
