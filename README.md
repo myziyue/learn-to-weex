@@ -40,3 +40,6 @@
     
     3.4. [将 .we 源代码转换成 JS Bundle](./documents/01.tutorial/15.how-to.transform-code-into-js-bundle.md)
 
+4. 工具和服务
+
+    4.1. [CLI](./documents/02.tools/01.tools.cli.md)
