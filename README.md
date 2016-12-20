@@ -55,4 +55,12 @@
     5.1. 通用选项
     
     5.1.1. [Bootstrap](./documents/03.references/01.references.bootstrap.md)
+    
+    5.1.2. [ViewModel选项](./documents/03.references/02.references.component-defs.md)
+    
+    5.1.3. [ViewModel API](./documents/03.references/03.references.api.md)
+    
+    5.1.4. [通用特性](./documents/03.references/04.references.gesture.md)
+    
+    5.1.5. [通用样式](./documents/03.references/05.references.common-attrs.md)
    

@@ -1,0 +1,41 @@
+<template>
+    <div class="wrapper">
+        <div class="box box1">
+        </div>
+        <div class="box box2">
+        </div>
+        <div class="box box3">
+        </div>
+    </div>
+</template>
+
+<style>
+    .wrapper {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: #cccccc;
+    }
+    .box {
+        width: 400;
+        height: 400;
+        position: absolute;
+    }
+    .box1 {
+        top: 0;
+        left: 0;
+        background-color: #ff0000;
+    }
+    .box2 {
+        top: 150;
+        left: 150;
+        background-color: #0055dd;
+    }
+    .box3 {
+        top: 300;
+        left: 300;
+        background-color: #00ff49;
+    }
+</style>

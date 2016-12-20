@@ -1,0 +1,15 @@
+<template>
+    <div style="width: {{w}}; height: {{h}}; background-color: red;" onclick="update"></div>
+</template>
+<script>
+    module.exports = {
+        data: function () {
+            return {w: 750, h: 200}
+        },
+        methods: {
+            update: function (e) {
+                this.h += 200
+            }
+        }
+    }
+</script>
