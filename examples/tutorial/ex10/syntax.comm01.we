@@ -1,0 +1,49 @@
+<element name="foo">
+    <template>
+        <div>
+            <image src="{{imageUrl}}" class="thumb" onclick="test"></image>
+            <text>{{title}}</text>
+        </div>
+    </template>
+    <style>
+        .thumb { width: 200; height: 200; }
+    </style>
+    <script>
+        module.exports = {
+            data: {
+                title: '',
+                imageUrl: ''
+            },
+            methods: {
+                test: function () {
+                    // Emit notify to parent
+                    this._parent.$emit('notify', {a: 1})
+                }
+            }
+        }
+    </script>
+</element>
+
+<template>
+    <div>
+        <foo title="Hello" image-url="https://gtms02.alicdn.com/tps/i2/TB1QHKjMXXXXXadXVXX20ySQVXX-512-512.png"></foo>
+        <text if="eventType">event: {{eventType}} - {{eventDetail}}</text>
+    </div>
+</template>
+
+<script>
+    module.exports = {
+        data: {
+            eventType: '',
+            eventDetail: {}
+        },
+        created: function () {
+            this.$on('notify', function(event) {
+                // When a notify comes, this handler will be run.
+                // `event.detail` will be `{a: 1}`
+                this.eventType = event.type
+                this.eventDetail = JSON.stringify(event.detail)
+            })
+        }
+    }
+</script>
