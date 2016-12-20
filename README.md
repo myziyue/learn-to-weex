@@ -57,4 +57,6 @@
     5.1.1. [Bootstrap](./documents/03.references/01.references.bootstrap.md)
     
     5.1.2. [ViewModel选项](./documents/03.references/02.references.component-defs.md)
+    
+    5.1.3. [ViewModel API](./documents/03.references/03.references.api.md)
    
