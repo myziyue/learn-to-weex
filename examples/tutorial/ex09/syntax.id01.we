@@ -1,0 +1,18 @@
+<template>
+    <div>
+        <text id="goto-top">Top</text>
+        <div style="height: 10000; background-color: #999999;"></div>
+        <text onclick="back2Top" style="color: red;">Back to Top</text>
+    </div>
+</template>
+<script>
+    var dom = require('@weex-module/dom')
+    module.exports = {
+        methods: {
+            back2Top: function () {
+                var el = this.$el('goto-top')
+                dom.scrollToElement(el, { offset: 10 })
+            }
+        }
+    }
+</script>

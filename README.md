@@ -23,3 +23,5 @@
     2.5. [渲染过程控制](./documents/ex01.tutorial/07.syntax.render-logic.md)
     
     2.6. [自定义组件](./documents/ex01.tutorial/08.syntax.composed-component.md)
+    
+    2.7. [获取子组件信息](./documents/ex01.tutorial/09.syntax.id.md)
