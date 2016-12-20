@@ -33,5 +33,26 @@
 3. 最佳实践
 
     3.1. [如何使用 Devtools 调试 Weex 页面](./documents/01.tutorial/12.how-to.debug-with-devtools.md)
-
     
+    3.2. [如何在浏览器中调试？](./documents/01.tutorial/13.how-to.debug-with-html5.md)
+    
+    3.3. [如何引入第三方库](./documents/01.tutorial/14.how-to.require-3rd-party-libs.md)
+    
+    3.4. [将 .we 源代码转换成 JS Bundle](./documents/01.tutorial/15.how-to.transform-code-into-js-bundle.md)
+
+4. 工具和服务
+
+    4.1. [CLI](./documents/02.tools/01.tools.cli.md)
+    
+    4.2. [Devtools](./documents/02.tools/02.tools.devtools.md)
+    
+    4.3. [transformer](./documents/02.tools/03.tools.transformer.md)
+    
+    4.4. [Weex Playground App](./documents/02.tools/04.tools.playground-app.md)
+    
+5. 开发手册
+
+    5.1. 通用选项
+    
+    5.1.1. [Bootstrap](./documents/03.references/01.references.bootstrap.md)
+   
