@@ -25,3 +25,5 @@
     2.6. [自定义组件](./documents/ex01.tutorial/08.syntax.composed-component.md)
     
     2.7. [获取子组件信息](./documents/ex01.tutorial/09.syntax.id.md)
+    
+    2.8. [组件间通信](./documents/ex01.tutorial/10.syntax.comm.md)

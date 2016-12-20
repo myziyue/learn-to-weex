@@ -1,0 +1,43 @@
+<element name="foo">
+    <template>
+        <div>
+            <image if="imageUrl" src="{{imageUrl}}" class="thumb"></image>
+            <text>Foo</text>
+        </div>
+    </template>
+    <style>
+        .thumb { width: 200; height: 200; }
+    </style>
+    <script>
+        module.exports = {
+            data: {
+                imageUrl: ''
+            },
+            created: function() {
+                this.$on('changeImage', function (e) {
+                    this.imageUrl = e.detail
+                }.bind(this))
+            }
+        }
+    </script>
+</element>
+
+<template>
+    <div>
+        <foo id="sub"></foo>
+        <text onclick="test">click to update foo</text>
+    </div>
+</template>
+
+<script>
+    module.exports = {
+        methods: {
+            test: function (e) {
+                this.$vm('sub').$emit(
+                    'changeImage',
+                    'https://gtms02.alicdn.com/tps/i2/TB1QHKjMXXXXXadXVXX20ySQVXX-512-512.png'
+                )
+            }
+        }
+    }
+</script>
