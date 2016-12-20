@@ -1,0 +1,44 @@
+<!-- definition of sub components -->
+<element name="sub-component-a">
+    <text>sub-component-a</text>
+</element>
+<element name="sub-component-b">
+    <text>sub-component-b</text>
+</element>
+<element name="sub-component-c">
+    <text>sub-component-c</text>
+</element>
+
+<!-- definition of top-level component -->
+<template>
+    <sub-component-a></sub-component-a>
+    <sub-component-b></sub-component-b>
+    <sub-component-c></sub-component-c>
+</template>
+<style></style>
+<script>
+    module.exports = {
+        data: { x: 1, y: 2 }
+    }
+</script>
+
+<!-- config and data -->
+<script type="config">
+  downgrade: {
+    ios: {
+      os: '9', // all of 9.x.x
+      app: '~5.3.2',
+      framework: '^1.3', // all of 1.3.x
+      deviceModel: ['AAAA', 'BBBB']
+    },
+    android: {
+      os: '*', // all of version
+      app: '^5',
+      framework: '',
+      deviceModel: ''
+    }
+  }
+</script>
+<script type="data">
+  { y: 200 }
+</script>
