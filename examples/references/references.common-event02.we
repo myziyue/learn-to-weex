@@ -1,0 +1,19 @@
+<template>
+    <div style="width: 400; height: 200; background-color: {{bg}};
+    justify-content: center; align-items: center;" onlongpress="{{update}}">
+        <text style="font-size: 60">Press me</text>
+    </div>
+</template>
+
+<script>
+    module.exports = {
+        data: {
+            bg: '#FF0000'
+        },
+        methods: {
+            update: function () {
+                this.bg = this.bg === '#FF0000' ? '#00FF00' : '#FF0000'
+            }
+        }
+    }
+</script>
