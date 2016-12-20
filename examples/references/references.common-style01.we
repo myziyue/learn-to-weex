@@ -1,5 +1,36 @@
-<template></template>
-
-<script></script>
-
-<style></style>
+<template>
+    <div>
+        <div repeat="(i, v) in list" class="row">
+            <div repeat="(k, text) in v" class="item">
+                <div>
+                    <text>{{text}}</text>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+<style>
+    .item{
+        flex:1;
+        justify-content: center;
+        align-items:center;
+        border-width:1;
+    }
+    .row{
+        flex-direction: row;
+        height:80;
+    }
+</style>
+<script>
+    module.exports = {
+        data: function () {
+            return {
+                list:[
+                    ['A', 'B', 'C'],
+                    ['D', 'E', 'F'],
+                    ['G', 'H', 'I']
+                ]
+            }
+        }
+    }
+</script>
