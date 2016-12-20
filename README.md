@@ -37,5 +37,6 @@
     3.2. [如何在浏览器中调试？](./documents/01.tutorial/13.how-to.debug-with-html5.md)
     
     3.3. [如何引入第三方库](./documents/01.tutorial/14.how-to.require-3rd-party-libs.md)
-
     
+    3.4. [将 .we 源代码转换成 JS Bundle](./documents/01.tutorial/15.how-to.transform-code-into-js-bundle.md)
+
