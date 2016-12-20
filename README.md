@@ -21,3 +21,5 @@
     2.4. [展示逻辑控制](./documents/ex01.tutorial/06.syntax.display-logic.md)
     
     2.5. [渲染过程控制](./documents/ex01.tutorial/07.syntax.render-logic.md)
+    
+    2.6. [自定义组件](./documents/ex01.tutorial/08.syntax.composed-component.md)
