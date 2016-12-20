@@ -1,0 +1,88 @@
+<template>
+    <scroller onviewappear="{{viewappear}}" onviewdisappear="{{viewdisappear}}">
+        <div class="item">
+            <text>scroll 1</text>
+        </div>
+        <div class="item">
+            <text>scroll 2</text>
+        </div>
+        <div class="item">
+            <text>scroll 3</text>
+        </div>
+        <div class="item">
+            <text>scroll 4</text>
+        </div>
+        <div class="item">
+            <text>scroll 5</text>
+        </div>
+        <div class="item">
+            <text>scroll 6</text>
+        </div>
+        <div class="item">
+            <text>scroll 7</text>
+        </div>
+        <div class="item">
+            <text>scroll 8</text>
+        </div>
+        <div class="item">
+            <text>scroll 9</text>
+        </div>
+        <div class="item">
+            <text>scroll 10</text>
+        </div>
+        <div class="item" onappear="alertMsg" >
+            <text>I will alert a message when I appeared.</text>
+        </div>
+    </scroller>
+</template>
+
+<style>
+    .list {
+        height: 850;
+    }
+
+    .count {
+        font-size: 48;
+        margin: 10;
+    }
+
+    .indicator {
+        height: 40;
+        width: 40;
+        color: #45b5f0;
+    }
+
+    .row {
+        width: 750;
+    }
+
+    .item {
+        justify-content: center;
+        border-bottom-width: 2;
+        border-bottom-color: #c0c0c0;
+        height: 200;
+        padding: 20;
+    }
+</style>
+
+<script>
+    var modal = require('@weex-module/modal')
+    module.exports = {
+        data: {},
+        methods: {
+            alertMsg: function (e) {
+                modal.alert({
+                    message: 'I am appeared.',
+                    okTitle: 'Appear'
+                }, function() {
+                })
+            },
+            viewappear: function () {
+                nativeLog('>>>>>', 'viewappear')
+            },
+            viewdisappear: function () {
+                nativeLog('>>>>>', 'viewdisappear')
+            }
+        }
+    }
+</script>

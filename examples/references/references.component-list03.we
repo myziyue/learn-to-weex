@@ -1,0 +1,40 @@
+<template>
+    <list class="list">
+        <cell>
+            <div onclick="go" style="width: 750;height: 50; position: fixed; left: 0; right: 0; bottom: 0; background-color: #eeeeee;">
+                <text style="text-align: center;">
+                    Go to 50th line.
+                </text>
+            </div>
+        </cell>
+        <cell class="row" repeat="item in rows" id="item-{{$index}}">
+            <text class="item-title">row {{item.id}}</text>
+        </cell>
+    </list>
+</template>
+
+<script>
+    var dom = require('@weex-module/dom')
+
+    module.exports = {
+        data: {
+            rows: []
+        },
+        created: function () {
+            for (var i = 0; i < 100; i++) {
+                this.rows.push({
+                    id: i
+                })
+            }
+        },
+        methods: {
+            go: function () {
+                var el = this.$el('item-49')
+
+                dom.scrollToElement(el, {
+                    offset: 0
+                })
+            }
+        }
+    }
+</script>

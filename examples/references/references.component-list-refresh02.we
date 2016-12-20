@@ -1,0 +1,70 @@
+<template>
+    <scroller onloadmore="onloadmore" loadmoreoffset="1000">
+        <refresh onrefresh="onrefresh" display="{{refreshDisplay}}">
+            <text id="refreshText">{{refreshText}}</text>
+        </refresh>
+        <div repeat="v in items">
+            <text style="font-size: 40; color: #000000">{{v.item}}</text>
+        </div>
+        <loading onloading="onloading" display="{{loadingDisplay}}">
+            <text id="loadingText">{{loadingText}}</text>
+        </loading>
+    </scroller>
+</template>
+
+<script>
+    module.exports = {
+        data: {
+            refreshDisplay: 'show',
+            loadingDisplay: 'show',
+            loadingText: 'pull up to load more',
+            refreshText: 'pull down to refresh',
+            items: []
+        },
+        created: function () {
+            for (var i = 0; i < 30; i++) {
+                this.items.push({
+                    'item': 'test data' + i
+                });
+            }
+        },
+        methods: {
+            onrefresh: function () {
+                var vm = this;
+                vm.refreshDisplay = 'show'
+                if (vm.items.length > 50) {
+                    vm.refreshText = "no more data!"
+                    vm.refreshDisplay = 'hide'
+                    return;
+                }
+                var len = vm.items.length;
+                for (var i = len; i < (len + 20); i++) {
+                    vm.items.unshift({
+                        'item': 'test data ' + i
+                    });
+                }
+                vm.refreshDisplay = 'hide'
+            },
+            onloading: function () {
+                var vm = this;
+                vm.loadingDisplay = 'show'
+                if (vm.items.length > 30) {
+                    vm.loadingText = "no more data!"
+                    vm.loadingDisplay = 'hide'
+                    return;
+                }
+
+                var len = vm.items.length;
+                for (var i = len; i < (len + 20); i++) {
+                    vm.items.push({
+                        'item': 'test data ' + i
+                    });
+                }
+                vm.loadingDisplay = 'hide'
+            },
+            onloadmore: function () {
+                console.log("into--[onloadmore]")
+            }
+        }
+    }
+</script>

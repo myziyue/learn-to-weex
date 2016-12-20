@@ -1,0 +1,86 @@
+<template>
+    <div>
+        <div>
+            <text class="btn" onclick="openDialog">Show Dialog</text>
+        </div>
+
+        <div id="dialog" class="dialog" if="{{isShowDialog}}">
+            <div class="dialog-backdrop"></div>
+            <div class="dialog-content">
+                <div class="dialog-header">
+                    <text class="dialog-title">{{dialogTitle}}</text>
+                    <text class="close" onclick="closeDialog">×</text>
+                </div>
+                <div class="dialog-body">
+                    <text>{{dialogBody}}</text>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<style>
+    .dialog-backdrop {
+        opacity: .5;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: #000000;
+    }
+    .dialog {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .dialog-content {
+        width: 450;
+        background-color: #ffffff;
+    }
+    .dialog-header {
+        padding: 20;
+        border-bottom-width: 1;
+        border-bottom-style: solid;
+        border-bottom-color: #efefef;
+    }
+    .dialog-body {
+        padding: 20;
+    }
+    .close {
+        font-size: 50;
+        position: absolute;
+        right: 10;
+        top: 10;
+    }
+    .btn {
+        text-align: center;
+        color: #ffffff;
+        padding: 12;
+        background-color: #3071a9;
+        border-color: #285e8e;
+        border-radius: 50;
+    }
+</style>
+
+<script>
+    module.exports = {
+        data: {
+            isShowDialog: false,
+            dialogTitle: 'HELLO',
+            dialogBody: 'Weex is best!'
+        },
+        methods: {
+            openDialog: function (e) {
+                this.isShowDialog = true
+            },
+            closeDialog: function (e) {
+                this.isShowDialog = false
+            }
+        }
+    }
+</script>

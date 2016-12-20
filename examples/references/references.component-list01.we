@@ -1,0 +1,23 @@
+<template>
+    <list class="list">
+        <cell class="row" repeat="item in rows" index="{{$index}}">
+            <text class="item-title">row {{item.id}}</text>
+        </cell>
+    </list>
+</template>
+
+<style></style>
+
+<script>
+    module.exports = {
+        data: {
+            rows:[
+                {id: 1},
+                {id: 2},
+                {id: 3},
+                {id: 4},
+                {id: 5}
+            ]
+        }
+    }
+</script>
