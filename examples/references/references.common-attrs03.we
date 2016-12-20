@@ -1,0 +1,32 @@
+<template>
+    <div class="btn" onClick="alertMsg"><text>Click me</text></div>
+</template>
+
+<style>
+    .btn {
+        justify-content: center;
+        align-items: center;
+        width: 200;
+        height: 100;
+        background-color: #ff0000;
+        border-radius: 5;
+        color: #ffffff;
+    }
+</style>
+
+<script>
+    var modal = require('@weex-module/modal')
+
+    module.exports = {
+        data: {},
+        methods: {
+            alertMsg: function (e) {
+                modal.alert({
+                    message: 'click',
+                    okTitle: 'alert'
+                }, function() {
+                })
+            }
+        }
+    }
+</script>

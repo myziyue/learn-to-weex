@@ -59,4 +59,6 @@
     5.1.2. [ViewModel选项](./documents/03.references/02.references.component-defs.md)
     
     5.1.3. [ViewModel API](./documents/03.references/03.references.api.md)
+    
+    5.1.4. [通用特性](./documents/03.references/04.references.gesture.md)
    
