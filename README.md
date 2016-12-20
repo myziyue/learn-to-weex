@@ -35,5 +35,7 @@
     3.1. [如何使用 Devtools 调试 Weex 页面](./documents/01.tutorial/12.how-to.debug-with-devtools.md)
     
     3.2. [如何在浏览器中调试？](./documents/01.tutorial/13.how-to.debug-with-html5.md)
+    
+    3.3. [如何引入第三方库](./documents/01.tutorial/14.how-to.require-3rd-party-libs.md)
 
     
