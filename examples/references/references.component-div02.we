@@ -1,0 +1,12 @@
+<template>
+    <div>Hello World!</div>
+</template>
+
+<style>
+    .text {
+        font-size: 70;
+        color: #ff0000
+    }
+</style>
+
+<script></script>
