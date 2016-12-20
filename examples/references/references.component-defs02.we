@@ -1,0 +1,21 @@
+<template>
+
+</template>
+<script>
+    module.exports = {
+        data: function () {
+        },
+        methods: function () {
+
+        },
+        init: function () {
+            console.log('ViewModel constructor begins')
+        },
+        created: function () {
+            console.log('Data observation finished')
+        },
+        ready: function () {
+            console.log('Virtual DOM finished')
+        }
+    }
+</script>
