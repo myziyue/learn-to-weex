@@ -90,7 +90,7 @@
     
     6.2. [数据绑定原理](./documents/04.advanced/02.advanced.how-data-binding-works.md)
     
-    6.3. [如何创建一个 Weex 项目](./documents/04.advanced/)
+    6.3. [如何创建一个 Weex 项目](./documents/04.advanced/03.advanced.create-a-weex-project.md)
     
     6.4. [集成到 Android](./documents/04.advanced/)
     
